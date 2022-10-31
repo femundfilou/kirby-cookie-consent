@@ -1,0 +1,88 @@
+type: fields
+fields:
+  cookiesettings:
+    label:
+      de: Cookie Consent Verwaltung
+      en: Cookie Consent Manager
+    type: headline
+    numbered: false
+  cookiecategories:
+    label:
+      de: Kategorien
+      en: Categories
+    type: structure
+    columns:
+      label:
+    fields:
+      label:
+        label:
+          de: Bezeichnung
+          en: Label
+        type: text
+        required: true
+      description:
+        label:
+          de: Beschreibung
+          en: Description
+        type: writer
+        marks: false
+        nodes: false
+      id:
+        label:
+          de: ID
+          en: ID
+        type: slug
+        wizard:
+          field: label
+          text: " "
+        help:
+          de: Einzigartige Kennung, mit der die Kategorie gefunden werden kann.
+          en: Unique identifier that matches the category.
+        required: true
+  cookiepolicies:
+    label:
+      de: Richtlinien
+      en: Policies
+    type: structure
+    columns:
+      label:
+    fields:
+      label:
+        label:
+          de: Bezeichnung
+          en: Label
+        type: text
+        required: true
+      description:
+        label:
+          de: Beschreibung
+          en: Description
+        type: writer
+        marks: false
+        nodes: false
+      id:
+        label:
+          de: ID
+          en: ID
+        help:
+          de: Einzigartige Kennung, mit der die Richtlinie gefunden werden kann.
+          en: Unique identifier that matches the policy.
+        type: slug
+        required: true
+        wizard:
+          field: label
+          text: " "
+      category:
+        label:
+          de: Kategorie
+          en: Category
+        type: select
+        options: query
+        help:
+          de: Bitte erstellen Sie zunächst mindestens eine Kategorie und laden Sie die Seite neu, um Richtlinien anlegen zu können.
+          en: Please add at least one category and reload the page before adding policies.
+        query:
+          fetch: site.cookiecategories.toStructure
+          text: "{{ structureItem.label }}"
+          value: "{{ structureItem.id }}"
+        required: true

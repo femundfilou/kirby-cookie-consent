@@ -1,0 +1,15 @@
+# Git
+.gitattributes export-ignore
+.gitignore export-ignore
+
+# Dev
+.nvmrc export-ignore
+.release-it.json export-ignore
+.pnpm-lock.yaml export-ignore
+.editorconfig export-ignore
+src export-ignore
+vite.config.ts export-ignore
+tsconfig.json export-ignore
+tsconfig.node.json export-ignore
+svelte.config.js export-ignore
+.php-cs-fixer.dist.php export-ignore

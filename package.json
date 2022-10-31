@@ -1,0 +1,45 @@
+{
+  "name": "kirby-cookie-consent",
+  "version": "0.0.0",
+  "description": "Cookie Consent is a customizable, easy-to-use privacy consent plugin for Kirby CMS.",
+  "type": "module",
+  "files": [
+    "assets/js"
+  ],
+  "main": "./assets/js/cookie-consent.js",
+  "module": "./assets/cookie-consent.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/cookie-consent.mjs",
+      "require": "./dist/cookie-consent.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "test-ui": "vitest --ui",
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "Justus Kraft <hallo@justuskraft.de>",
+  "license": "MIT",
+  "devDependencies": {
+    "@release-it/bumper": "^4.0.0",
+    "@release-it/conventional-changelog": "^5.1.1",
+    "@sveltejs/vite-plugin-svelte": "^1.1.0",
+    "@tsconfig/svelte": "^3.0.0",
+    "@types/js-cookie": "^3.0.2",
+    "release-it": "^15.5.0",
+    "svelte": "^3.35.0",
+    "svelte-check": "^2.9.2",
+    "svelte-i18n": "^3.4.0",
+    "svelte-preprocess": "^4.10.7",
+    "vite": "^3.2.2",
+    "vite-plugin-css-injected-by-js": "^2.1.1",
+    "vitest": "^0.24.4"
+  },
+  "dependencies": {
+    "js-cookie": "^3.0.1"
+  }
+}
