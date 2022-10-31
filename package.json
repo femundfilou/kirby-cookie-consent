@@ -1,6 +1,6 @@
 {
   "name": "kirby-cookie-consent",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Cookie Consent is a customizable, easy-to-use privacy consent plugin for Kirby CMS.",
   "type": "module",
   "files": [

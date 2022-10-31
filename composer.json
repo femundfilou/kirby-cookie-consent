@@ -1,6 +1,6 @@
 {
   "name": "femundfilou/kirby-cookie-consent",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Cookie Consent is a customizable, easy-to-use privacy consent plugin for Kirby CMS.",
   "type": "kirby-plugin",
   "keywords": [
@@ -15,7 +15,7 @@
   ],
   "autoload": {
     "psr-4": {
-        "Fefi\\CookieConsent\\": "lib/"
+      "Fefi\\CookieConsent\\": "lib/"
     }
   },
   "require": {
