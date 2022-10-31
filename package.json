@@ -19,7 +19,8 @@
     "build": "vite build",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "test-ui": "vitest --ui",
-    "test": "vitest"
+    "test": "vitest",
+    "release": "release-it"
   },
   "keywords": [],
   "author": "Justus Kraft <hallo@justuskraft.de>",
