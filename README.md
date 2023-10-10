@@ -8,22 +8,22 @@ Cookie Consent is a customizable, easy-to-use [Kirby CMS](https://getkirby.com) 
 
 Cookie Consent uses categories to group single policies (or cookies as you wish). Each category is an object with the following entries.
 
-| key     |  type  | value                           |
-| :------ | :----: | :------------------------------ |
-| `id`    | string | unique string                   |
-| `label` | string | Label visible to the user       |
-| `desc`  | string | Description visible to the user |
+| key           |  type  | value                           |
+| :------------ | :----: | :------------------------------ |
+| `id`          | string | unique string                   |
+| `label`       | string | Label visible to the user       |
+| `description` | string | Description visible to the user |
 
 ### Policies
 
 A policy needs to be created for each cookie or tool you wish to have user consent for. A policy in an object with the following entries.
 
-| key        |  type  | value                           |
-| :--------- | :----: | :------------------------------ |
-| `id`       | string | unique string                   |
-| `label`    | string | Label visible to the user       |
-| `desc`     | string | Description visible to the user |
-| `category` | string | must match with an category id  |
+| key           |  type  | value                           |
+| :------------ | :----: | :------------------------------ |
+| `id`          | string | unique string                   |
+| `label`       | string | Label visible to the user       |
+| `description` | string | Description visible to the user |
+| `category`    | string | must match with an category id  |
 
 ## Installation
 
