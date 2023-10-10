@@ -82,12 +82,13 @@ A global object is added to window. You can use it by calling `CookieConsent` or
 
 You can override the default configuration in your `site/config/config.php` or on the snippet itself. The following options are provided:
 
-| name      |  type   |     default      |       possible values        | description                                      |
-| :-------- | :-----: | :--------------: | :--------------------------: | :----------------------------------------------- |
-| locale    | string  |      `'en'`      |        `'en'`, `'de'`        | Language used in the cookie banner. You can also [add your own translation](#overwriting-or-adding-translations)                               |
-| expires   | number  |      `365`       |         any integer          | Number in days, the cookie banner shows up again. |
-| position  | string  | `'bottom-right'` | `'center'`, `'bottom-right'` | Position of banner.                              |
-| blockPage | boolean |     `false`      |       `true`, `false `       | Adds a layer to block interaction with the page. |
+| name          |  type   |     default      |       possible values        | description                                                                                                      |
+| :------------ | :-----: | :--------------: | :--------------------------: | :--------------------------------------------------------------------------------------------------------------- |
+| locale        | string  |      `'en'`      |        `'en'`, `'de'`        | Language used in the cookie banner. You can also [add your own translation](#overwriting-or-adding-translations) |
+| expires       | number  |      `365`       |         any integer          | Number in days, the cookie banner shows up again.                                                                |
+| position      | string  | `'bottom-right'` | `'center'`, `'bottom-right'` | Position of banner.                                                                                              |
+| blockPage     | boolean |     `false`      |       `true`, `false `       | Adds a layer to block interaction with the page.                                                                 |
+| autoIncludeJs | boolean |      `true`      |       `true`, `false `       | Automatically add necessary javascript assets.                                                                   |
 
 
 ### Overwrite in `config.php`
