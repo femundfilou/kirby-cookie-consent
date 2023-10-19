@@ -1,42 +1,42 @@
 {
-  "name": "femundfilou/kirby-cookie-consent",
-  "version": "0.1.0",
-  "description": "Cookie Consent is a customizable, easy-to-use privacy consent plugin for Kirby CMS.",
-  "type": "kirby-plugin",
-  "keywords": [
-    "kirby-plugin"
-  ],
-  "homepage": "https://github.com/femundfilou/kirby-cookie-consent",
-  "authors": [
-    {
-      "name": "Justus Kraft",
-      "email": "hallo@justuskraft.de"
-    }
-  ],
-  "autoload": {
-    "psr-4": {
-      "Fefi\\CookieConsent\\": "lib/"
-    }
-  },
-  "require": {
-    "getkirby/composer-installer": "^1.2",
-    "getkirby/cms": "^3.6"
-  },
-  "extra": {
-    "installer-name": "cookie-consent"
-  },
-  "config": {
-    "optimize-autoloader": true,
-    "preferred-install": "dist",
-    "sort-packages": true,
-    "allow-plugins": {
-      "getkirby/composer-installer": true
-    }
-  },
-  "scripts": {
-    "fix": "php-cs-fixer fix --config .php-cs-fixer.dist.php"
-  },
-  "require-dev": {
-    "friendsofphp/php-cs-fixer": "^3.8"
-  }
+	"name": "femundfilou/kirby-cookie-consent",
+	"version": "0.1.0",
+	"description": "Cookie Consent is a customizable, easy-to-use privacy consent plugin for Kirby CMS.",
+	"type": "kirby-plugin",
+	"keywords": [
+		"kirby-plugin"
+	],
+	"homepage": "https://github.com/femundfilou/kirby-cookie-consent",
+	"authors": [
+		{
+			"name": "Justus Kraft",
+			"email": "hallo@justuskraft.de"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Fefi\\CookieConsent\\": "lib/"
+		}
+	},
+	"require": {
+		"getkirby/composer-installer": "^1.2",
+		"getkirby/cms": "^3.6 || ^4.0"
+	},
+	"extra": {
+		"installer-name": "cookie-consent"
+	},
+	"config": {
+		"optimize-autoloader": true,
+		"preferred-install": "dist",
+		"sort-packages": true,
+		"allow-plugins": {
+			"getkirby/composer-installer": true
+		}
+	},
+	"scripts": {
+		"fix": "php-cs-fixer fix --config .php-cs-fixer.dist.php"
+	},
+	"require-dev": {
+		"friendsofphp/php-cs-fixer": "^3.8"
+	}
 }
